@@ -17,11 +17,12 @@ for(let i=0; i<para.length; i++ ){
   para[i].style.backgroundColor="cyan";
 }
 
-<p id="contentp"> This is content paragraph </p>    
+
 // queryselector
 const qs=document.querySelector("#contentp")
 console.log(qs);
 qs.textContent= "vfngjnvkjdkdj";
+
 
 
 
