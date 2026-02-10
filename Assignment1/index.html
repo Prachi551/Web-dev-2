@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">      
+        <h1> Smart Event Dashboard</h1>
+
+        <div class="dashboard">
+            <div class="form section">
+                <h2>Add New Event</h2>
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventTitle">Event Title:</label>
+                        <input type ="text" id="eventTitle" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Event Date:</label>
+                        <input type
+                    </div>
+                </form>
+            </div>
+
+      </header>
+
+      <!-- Two main cards -->
+      <main class="main-grid">
+        <!-- LEFT: Add New Event -->
+        <section class="card add-event">
+          <h2 class="card-title">Add New Event</h2>
+
+          <div class="form-group">
+            <label for="title">Event Title:</label>
+            <input id="title" type="text" placeholder="Enter title">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Event Date:</label>
+            <input id="date" type="text" placeholder="dd/mm/yyyy">
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category">
+              <option>Conference</option>
+              <option>Workshop</option>
+              <option>Meetup</option>
+              <option>Webinar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Write something..."></textarea>
+          </div>
+
+          <button class="btn btn-primary">Add Event</button>
+        </section>
+
+        <!-- RIGHT: My Events -->
+        <section class="card my-events">
+          <h2 class="card-title">My Events</h2>
+
+          <div class="my-events-header">
+            <button class="btn btn-chip chip-outline">Clear All Events</button>
+            <button class="btn btn-chip chip-filled">Add Sample Events</button>
+          </div>
+
+          <div class="events-list">
+            <p class="empty-text">No events yet. Add your first event!</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Bottom: DOM Manipulation Demo -->
+      <section class="card demo">
+        <h2 class="card-title">DOM Manipulation Demo</h2>
+       
+        
+
+        <p class="demo-note">You pressed: <span class="key-pill">Shift</span></p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
